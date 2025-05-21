@@ -11,9 +11,9 @@ importers:
       '@ayanworks/polygon-did-registry-contract':
         specifier: 3.0.0
         version: 3.0.0
-      '@ayanworks/polygon-did-resolver':
-        specifier: 2.0.1-alpha.0
-        version: 2.0.1-alpha.0
+      '@bhutan-ndi/polygon-did-resolver':
+        specifier: 0.0.1-alpha.1
+        version: 0.0.1-alpha.1
       '@nomicfoundation/hardhat-verify':
         specifier: ^2.0.3
         version: 2.0.3(hardhat@2.19.4(ts-node@10.9.2(@types/node@18.19.3)(typescript@5.3.3))(typescript@5.3.3))
@@ -91,9 +91,6 @@ packages:
   '@ayanworks/polygon-did-registry-contract@3.0.0':
     resolution: {integrity: sha512-RnW31nkDIMG1YzuOycxGGrJFpgTcpBwS/UZR6/wMPrsJBKBEN28k2CZImwXkbgaknyTfL7xe1u3C8NxfDvhI4Q==}
 
-  '@ayanworks/polygon-did-resolver@2.0.1-alpha.0':
-    resolution: {integrity: sha512-W3S8iVblLtROspEGbYaBRuhtXMiiXPSjO78x7SvkK9X10ESr2mvBFYbWTMJe+0yjK1l4Ac64n/BArVq3RVBjZQ==}
-
   '@babel/code-frame@7.23.5':
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
     engines: {node: '>=6.9.0'}
@@ -105,6 +102,9 @@ packages:
   '@babel/highlight@7.23.4':
     resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
     engines: {node: '>=6.9.0'}
+
+  '@bhutan-ndi/polygon-did-resolver@0.0.1-alpha.1':
+    resolution: {integrity: sha512-2avxats2s+eMhA5+p3xvsI0XFRA1A2eyUVqMNVHH6mgu2nFcumI8vRzMxbBRnFF7RqP+d+HsnMuEoT4siqGNjQ==}
 
   '@chainsafe/as-sha256@0.3.1':
     resolution: {integrity: sha512-hldFFYuf49ed7DAakWVXSJODuq3pzJEguD8tQ7h+sGkM18vja+OFoJI9krnGmgzyuZC2ETX0NOIcCTy31v2Mtg==}
@@ -2975,15 +2975,6 @@ snapshots:
 
   '@ayanworks/polygon-did-registry-contract@3.0.0': {}
 
-  '@ayanworks/polygon-did-resolver@2.0.1-alpha.0':
-    dependencies:
-      '@ayanworks/polygon-did-registry-contract': 3.0.0
-      did-resolver: 4.1.0
-      ethers: 5.7.2
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-
   '@babel/code-frame@7.23.5':
     dependencies:
       '@babel/highlight': 7.23.4
@@ -2996,6 +2987,15 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
       js-tokens: 4.0.0
+
+  '@bhutan-ndi/polygon-did-resolver@0.0.1-alpha.1':
+    dependencies:
+      '@ayanworks/polygon-did-registry-contract': 3.0.0
+      did-resolver: 4.1.0
+      ethers: 5.7.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   '@chainsafe/as-sha256@0.3.1': {}
 

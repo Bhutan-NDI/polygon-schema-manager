@@ -1,6 +1,6 @@
 {
-  "name": "@ayanworks/polygon-schema-manager",
-  "version": "2.0.0-alpha.1",
+  "name": "@bhutan-ndi/polygon-schema-manager",
+  "version": "0.0.1-alpha.1",
   "description": "Polygon schema manager",
   "main": "build/index.js",
   "files": [
@@ -22,7 +22,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@ayanworks/polygon-did-registry-contract": "3.0.0",
-    "@ayanworks/polygon-did-resolver": "2.0.1-alpha.0",
+    "@bhutan-ndi/polygon-did-resolver": "0.0.1-alpha.1",
     "@nomicfoundation/hardhat-verify": "^2.0.3",
     "axios": "^1.6.3",
     "did-resolver": "^4.1.0",
@@ -46,10 +46,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ayanworks/polygon-schema-manager.git"
+    "url": "git+https://github.com/Bhutan-NDI/polygon-schema-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/ayanworks/polygon-schema-manager/issues"
+    "url": "https://github.com/Bhutan-NDI/polygon-schema-manager/issues"
   },
-  "homepage": "https://github.com/ayanworks/polygon-schema-manager#readme"
+  "homepage": "https://github.com/Bhutan-NDI/polygon-schema-manager#readme"
 }

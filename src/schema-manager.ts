@@ -5,7 +5,7 @@ import SchemaRegistryAbi from './abi/SchemaRegistry.json'
 import { buildSchemaResource } from './utils/schemaHelper'
 import DidRegistryContract from '@ayanworks/polygon-did-registry-contract'
 import axios from 'axios'
-import { getResolver } from '@ayanworks/polygon-did-resolver'
+import { getResolver } from '@bhutan-ndi/polygon-did-resolver'
 import { Resolver } from 'did-resolver'
 
 export type PolygonDidInitOptions = {
