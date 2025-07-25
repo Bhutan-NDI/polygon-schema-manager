@@ -16,8 +16,8 @@ contract SchemaRegistry {
      * @param _json JSON representation of the schema.
      */
     function createSchema(
-        string memory newSchemaId,
-        string memory _json
+        string calldata newSchemaId,
+        string calldata _json
     ) external {
         require(bytes(schemas[msg.sender][newSchemaId]).length == 0, "NOT_ALLOWED");
         schemas[msg.sender][newSchemaId] = _json;
